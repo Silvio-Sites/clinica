@@ -23,7 +23,7 @@ const WHATSAPP_URL =
 const INSTAGRAM_URL = "https://www.instagram.com/inmoverecovery/";
 const LOGO_URL = "/manus-storage/pasted_file_61a57O_image_339300e5.png";
 // Preenchido quando a página oficial da clínica estiver definida.
-const FACEBOOK_URL = "";
+const FACEBOOK_URL = "https://www.facebook.com/inmoverecovery";
 
 const imageUrls = {
   hero:
