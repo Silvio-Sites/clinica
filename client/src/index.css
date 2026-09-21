@@ -113,6 +113,7 @@ img { display: block; max-width: 100%; }
 .site-header--scrolled { background: rgba(251, 252, 255, 0.94); backdrop-filter: blur(16px); border-color: rgba(223, 228, 240, 0.8); box-shadow: 0 5px 22px rgba(23, 32, 61, 0.05); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 86px; }
 .brand-lockup { display: inline-flex; align-items: center; gap: 10px; position: relative; z-index: 2; }
+.brand-logo-image { width: 39px; height: 39px; border-radius: 11px; object-fit: cover; box-shadow: 0 5px 14px rgba(69, 54, 178, .18); }
 .brand-mark { display: grid; place-items: center; width: 37px; height: 37px; border: 1.5px solid var(--royal); border-radius: 50%; color: var(--royal); font-family: "Cormorant Garamond", serif; font-size: 18px; font-weight: 600; letter-spacing: -0.08em; line-height: 1; padding-right: 2px; }
 .brand-mark--light { border-color: rgba(255,255,255,.85); color: #fff; }
 .brand-name { color: var(--deep-blue); font-size: 14px; font-weight: 800; letter-spacing: .08em; text-transform: lowercase; line-height: 1; }
@@ -149,6 +150,11 @@ img { display: block; max-width: 100%; }
 h1 em, h2 em { color: var(--purple); font-style: italic; font-weight: 400; }
 .hero-text { max-width: 390px; margin: 29px 0 0; color: #5d6681; font-size: 15px; line-height: 1.85; }
 .hero-actions { display: flex; align-items: center; gap: 25px; margin-top: 35px; }
+.hero-booking-note { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; color: #64708c; }
+.hero-booking-note svg { color: #2c9b68; }
+.hero-booking-note span { display: flex; flex-direction: column; gap: 3px; }
+.hero-booking-note strong { color: var(--deep-blue); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.hero-booking-note small { color: #8d96aa; font-size: 10px; }
 .text-link, .arrow-link { display: inline-flex; align-items: center; gap: 8px; color: var(--deep-blue); font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .text-link svg, .arrow-link svg { transition: transform 180ms var(--ease-out); }
 .text-link:hover svg, .arrow-link:hover svg { transform: translateX(4px); }

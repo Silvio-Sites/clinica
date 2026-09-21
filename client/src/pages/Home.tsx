@@ -21,6 +21,7 @@ import {
 const WHATSAPP_URL =
   "https://wa.me/5541997780418?text=Ol%C3%A1%2C%20Inmove!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.%20Gostaria%20de%20saber%20quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis.";
 const INSTAGRAM_URL = "https://www.instagram.com/inmoverecovery/";
+const LOGO_URL = "/manus-storage/pasted_file_61a57O_image_339300e5.png";
 // Preenchido quando a página oficial da clínica estiver definida.
 const FACEBOOK_URL = "";
 
@@ -131,7 +132,7 @@ const instagramTiles = [
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#inicio" className="brand-lockup" aria-label="Inmove — voltar ao início">
-      <span className={`brand-mark ${light ? "brand-mark--light" : ""}`}>iM</span>
+      <img className="brand-logo-image" src={LOGO_URL} alt="Logo Inmove" />
       <span className={`brand-name ${light ? "brand-name--light" : ""}`}>
         inmove
         <small>recovery & fisioterapia</small>
@@ -242,6 +243,13 @@ export default function Home() {
                 <a className="text-link" href="#clinica">
                   Conhecer a clínica <ArrowRight size={16} />
                 </a>
+              </div>
+              <div className="hero-booking-note">
+                <MessageCircle size={15} />
+                <span>
+                  <strong>Agendamento direto pelo WhatsApp</strong>
+                  <small>Resposta da equipe da Inmove</small>
+                </span>
               </div>
               <div className="hero-note">
                 <span className="note-line" />
