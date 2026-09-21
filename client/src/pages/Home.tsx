@@ -16,6 +16,7 @@ import {
   MoveUpRight,
   ScanLine,
   Sparkles,
+  Star,
   X,
 } from "lucide-react";
 const WHATSAPP_URL =
@@ -488,13 +489,51 @@ export default function Home() {
               <p className="eyebrow eyebrow--blue">Experiências reais</p>
               <h2>O cuidado que continua<br /><em>depois da sessão.</em></h2>
             </div>
-            <div className="testimonials-empty">
-              <span className="quote-mark">“</span>
-              <p>
-                Os depoimentos de pacientes da Inmove serão publicados aqui assim que
-                forem aprovados pela clínica.
-              </p>
-              <span className="empty-caption">Conteúdo real, com autorização real.</span>
+            <div className="testimonials-grid">
+              <article className="testimonial-card">
+                <div className="testimonial-meta">
+                  <span>Jaqueline Mattos Ferreira</span>
+                  <small>Local Guide · 20 avaliações</small>
+                </div>
+                <div className="testimonial-stars" aria-label="5 estrelas">
+                  {[1, 2, 3, 4, 5].map((star) => <Star key={star} size={13} fill="currentColor" />)}
+                </div>
+                <p>“Vanessa tem sido excepcional. Dá pra ver o quanto você se dedica ao que faz, e isso reflete diretamente nos resultados. Obrigada por todo o cuidado.”</p>
+                <span className="testimonial-date">há 9 meses</span>
+              </article>
+              <article className="testimonial-card">
+                <div className="testimonial-meta">
+                  <span>Stella Urban</span>
+                  <small>1 avaliação</small>
+                </div>
+                <div className="testimonial-stars" aria-label="5 estrelas">
+                  {[1, 2, 3, 4, 5].map((star) => <Star key={star} size={13} fill="currentColor" />)}
+                </div>
+                <p>“O atendimento é totalmente personalizado. As fisioterapeutas são extremamente atenciosas, dedicadas e sempre levam em consideração nossos limites e nossas dores.”</p>
+                <span className="testimonial-date">há 9 meses</span>
+              </article>
+              <article className="testimonial-card">
+                <div className="testimonial-meta">
+                  <span>Lucas Lauro</span>
+                  <small>3 avaliações</small>
+                </div>
+                <div className="testimonial-stars" aria-label="5 estrelas">
+                  {[1, 2, 3, 4, 5].map((star) => <Star key={star} size={13} fill="currentColor" />)}
+                </div>
+                <p>“Lugar muito bem localizado, Vanessa ótima profissional. Me deixou bem confortável. Recomendo muito, melhor recovery.”</p>
+                <span className="testimonial-date">há 10 meses</span>
+              </article>
+              <article className="testimonial-card testimonial-card--featured">
+                <div className="testimonial-meta">
+                  <span>Adriano Freitas</span>
+                  <small>Local Guide · 43 avaliações</small>
+                </div>
+                <div className="testimonial-stars" aria-label="5 estrelas">
+                  {[1, 2, 3, 4, 5].map((star) => <Star key={star} size={13} fill="currentColor" />)}
+                </div>
+                <p>“Desde o primeiro atendimento com a Inmove e a Vanessa, sou bem acolhido e as experiências de recuperação são positivas. O espaço é muito organizado, moderno, acolhedor, e conta com equipamentos de ponta para o recovery e a fisioterapia.”</p>
+                <span className="testimonial-date">há 3 semanas · nova</span>
+              </article>
             </div>
           </div>
         </section>

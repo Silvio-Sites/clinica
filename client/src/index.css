@@ -255,6 +255,16 @@ h1 em, h2 em { color: var(--purple); font-style: italic; font-weight: 400; }
 .testimonials { padding: 130px 0 142px; }
 .section-heading--center { text-align: center; }
 .section-heading--center .eyebrow::before { display: none; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 57px; border-top: 1px solid #dce1ee; border-left: 1px solid #dce1ee; }
+.testimonial-card { min-height: 252px; border-right: 1px solid #dce1ee; border-bottom: 1px solid #dce1ee; padding: 27px 30px 25px; background: rgba(255,255,255,.26); transition: background 200ms ease, transform 200ms var(--ease-out); }
+.testimonial-card:hover { position: relative; z-index: 1; background: rgba(255,255,255,.75); transform: translateY(-3px); }
+.testimonial-card--featured { background: rgba(230,232,248,.5); }
+.testimonial-meta { display: flex; flex-direction: column; gap: 5px; }
+.testimonial-meta span { color: var(--deep-blue); font-size: 12px; font-weight: 800; letter-spacing: .03em; }
+.testimonial-meta small { color: #8b94aa; font-size: 9px; letter-spacing: .03em; }
+.testimonial-stars { display: flex; gap: 3px; margin-top: 20px; color: #8e79c9; }
+.testimonial-card p { margin: 18px 0 0; color: #5e6882; font-family: "Cormorant Garamond", serif; font-size: 23px; line-height: 1.16; }
+.testimonial-date { display: block; margin-top: 18px; color: #9aa2b7; font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .testimonials-empty { position: relative; max-width: 620px; margin: 58px auto 0; border-top: 1px solid #dce1ee; border-bottom: 1px solid #dce1ee; padding: 50px 50px 47px; text-align: center; }
 .quote-mark { display: block; height: 30px; color: var(--purple); font-family: Georgia, serif; font-size: 76px; line-height: .75; }
 .testimonials-empty p { max-width: 455px; margin: 20px auto 0; color: #65708b; font-family: "Cormorant Garamond", serif; font-size: 26px; line-height: 1.15; }
@@ -402,6 +412,9 @@ h1 em, h2 em { color: var(--purple); font-style: italic; font-weight: 400; }
   .process-step p { max-width: none; }
   .team-grid { gap: 40px; }
   .team-visual { height: 320px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonial-card { min-height: 0; padding: 25px 22px 23px; }
+  .testimonial-card p { font-size: 22px; }
   .testimonials-empty { padding: 37px 22px 35px; }
   .testimonials-empty p { font-size: 23px; }
   .instagram-grid { grid-template-columns: 1fr; }
