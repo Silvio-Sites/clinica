@@ -17,7 +17,7 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
-  app.get(/.*/, (_req, res) => {
+  app.use((_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
   });
 
